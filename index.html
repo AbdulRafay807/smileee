@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Program for Jenuu❤</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    p {
+      font-size: 24px;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Click for a Magical Compliment for my bestie (jenuu💕)!</h1>
+<button onclick="giveCompliment()">Make Me Smile</button>
+<p id="compliment"></p>
+
+<script>
+  const compliments = [
+    "You light up the room!",
+    "Your smile is pure magic!",
+    "You make everything better!",
+    "You're a true gem!",
+    "Your kindness is contagious!",
+    "You look amazing today!",
+    "You're doing great, keep it up!",
+    "You have a heart of gold!",
+    "Your laugh is my favorite sound!",
+    "You make the world a better place!"
+  ];
+
+  function giveCompliment() {
+    const randomIndex = Math.floor(Math.random() * compliments.length);
+    document.getElementById("compliment").textContent = compliments[randomIndex];
+  }
+</script>
+
+</body>
+</html>
